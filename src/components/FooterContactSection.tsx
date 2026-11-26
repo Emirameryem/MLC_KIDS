@@ -1,4 +1,4 @@
-import { ArrowUp, Instagram, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { ArrowUp, Instagram, Mail, MapPin, Clock, MessageCircle, Phone } from 'lucide-react';
 import { BRAND_ASSETS, CONTACT_INFO, NAV_ITEMS } from '../data/brandContent';
 import { EditorialReveal, SectionEyebrow } from './MotionPrimitives';
 
@@ -118,10 +118,17 @@ export function FooterContactSection({
               <p className="font-semibold">{CONTACT_INFO.hoursPrimary}</p>
               <p className="text-sm text-beige/75">{CONTACT_INFO.hoursSecondary}</p>
             </div>
-            <div className="mt-4">
+            <div className="mt-4 space-y-2">
+              <a
+                href={CONTACT_INFO.phoneHref}
+                className="flex items-center gap-2 text-sm font-semibold text-cream transition-colors hover:text-latte-soft"
+              >
+                <Phone className="h-4 w-4 text-latte-soft" strokeWidth={1.8} />
+                <span>{CONTACT_INFO.phoneDisplay}</span>
+              </a>
               <a
                 href={`mailto:${CONTACT_INFO.email}`}
-                className="inline-flex items-center gap-2 text-sm font-medium text-cream/90 transition-colors hover:text-latte-soft"
+                className="flex items-center gap-2 text-sm font-medium text-cream/90 transition-colors hover:text-latte-soft"
               >
                 <Mail className="h-4 w-4 text-latte-soft" strokeWidth={1.8} />
                 <span>{CONTACT_INFO.email}</span>

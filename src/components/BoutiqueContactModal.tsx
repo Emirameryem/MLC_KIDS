@@ -6,6 +6,8 @@ import {
   Clock,
   MessageCircle,
   Mail,
+  Phone,
+  Instagram,
   CheckCircle2,
 } from 'lucide-react';
 import { BRAND_ASSETS, CONTACT_INFO } from '../data/brandContent';
@@ -118,6 +120,26 @@ export function BoutiqueContactModal({
                           {CONTACT_INFO.hoursSecondary}
                         </span>
                       </span>
+                    </div>
+                    <div className="flex items-start gap-2.5">
+                      <Phone className="mt-0.5 h-4 w-4 shrink-0 text-latte-hover" strokeWidth={2} />
+                      <a
+                        href={CONTACT_INFO.phoneHref}
+                        className="font-semibold hover:text-latte-hover transition-colors"
+                      >
+                        {CONTACT_INFO.phoneDisplay}
+                      </a>
+                    </div>
+                    <div className="flex items-start gap-2.5">
+                      <Instagram className="mt-0.5 h-4 w-4 shrink-0 text-latte-hover" strokeWidth={2} />
+                      <a
+                        href={CONTACT_INFO.instagramUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-semibold hover:text-latte-hover transition-colors"
+                      >
+                        {CONTACT_INFO.instagramHandle}
+                      </a>
                     </div>
                     <div className="flex items-start gap-2.5">
                       <Mail className="mt-0.5 h-4 w-4 shrink-0 text-latte-hover" strokeWidth={2} />

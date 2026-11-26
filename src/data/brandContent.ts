@@ -178,10 +178,11 @@ export const CONTACT_INFO = {
   addressLine2: 'Tatvan / Bitlis',
   hoursPrimary: 'Haftanın Her Günü: 10.00 – 21.00',
   hoursSecondary: 'Pazartesi – Pazar kesintisiz hizmetinizdeyiz',
-  phoneDisplay: '+90 (212) 555 01 48',
+  phoneDisplay: '0546 739 13 41',
+  phoneHref: 'tel:+905467391341',
   email: 'iletisim@lckids.com.tr',
-  instagramHandle: '@lckids',
-  instagramUrl: 'https://instagram.com',
+  instagramHandle: '@lckids13',
+  instagramUrl: 'https://www.instagram.com/lckids13/',
   whatsappUrl:
-    'https://wa.me/905550000000?text=Merhaba%20LC%20Kids%2C%20ma%C4%9Fazan%C4%B1z%20ve%20koleksiyonlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.',
+    'https://wa.me/905467391341?text=Merhaba%20LC%20Kids%2C%20ma%C4%9Fazan%C4%B1z%20ve%20koleksiyonlar%C4%B1n%C4%B1z%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.',
 };
