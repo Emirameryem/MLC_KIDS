@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF7F2;
+    color: #2C241E;
+    font-feature-settings: "kern" 1, "liga" 1;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #FAF7F2;
+    color: #2C241E;
+  }
+}
+
+/* Editorial warm grain atmosphere without dark overlays */
+.linen-grain {
+  background-image: radial-gradient(rgba(44, 36, 30, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom sleek horizontal scrollbar hide for drag/wheel lookbook */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Delicate editorial hairline */
+.hairline-espresso {
+  border-color: rgba(44, 36, 30, 0.12);
+}
+
+.hairline-latte {
+  border-color: rgba(166, 137, 102, 0.28);
+}
+
+/* Smooth page scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(166, 137, 102, 0.45);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8C6F52;
+}
+
